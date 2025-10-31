@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const cors = require('cors');
-const bodyParser = require('body-parser');
+const cors = require('cors'); // allows your server to sepcify who can access its resources from a different origin(domain, port or protocol) its very usefull when your frontend and backend are on different servers
+const bodyParser = require('body-parser'); // Analyserles corps des requétes HTTP Entrantes de rendre les données accessibles via la propriété req.body
 require('dotenv').config();
 
 const app = express();
